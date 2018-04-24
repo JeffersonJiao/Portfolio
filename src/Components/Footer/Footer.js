@@ -5,7 +5,7 @@ class Footer extends Component {
     render(){
         return(
             <section className="footer-wrapper" name="footer">
-                <h1>Contact</h1>
+                <div>  &copy; Jefferson Jiao 2018</div>
             </section>
         )
     }

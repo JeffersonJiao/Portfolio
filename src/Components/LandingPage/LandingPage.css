@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Norican');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 .landing-wrapper{
     background-color: #fff;
     width: 100%;
@@ -9,9 +9,13 @@
 .landing-left{
     grid-column: span 2;
     min-height: 100%;
+    background-image: url('/assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .landing-left div{
-    margin-top: 350px;
+    margin-top: 150px;
     margin-left:100px;
     margin-right: 50px;
 }
@@ -31,20 +35,27 @@
     font-weight: 700;
     letter-spacing: 3px;
     font-family: 'Open-sans', sans-serif;
+    text-align: right;
+    padding-top: 50px;
+    font-size: 1.4rem;
 }
 .landing-left h1{
-    font-family: 'Norican', cursive;
-    font-size: 6rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 3.5rem;
     color: #013243;
+    text-align: right;
 }
 .my-image{
+    position: relative;
     background-color: #141414;
     width: 350px;
-    height: 520px;
+    height: 350px;
     background-image: url('/assets/my-image.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
+    background-attachment: absolute fixed;
+    border-radius: 50%;
 }
 .scroll-image{
     position: absolute;
@@ -54,10 +65,23 @@
     width: 64px;
     height: 64px;
     background-image: url('/assets/scroll.gif');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 @media only screen and (max-width: 768px){
     .landing-right{
         display: none;
+    }
+    .landing-left{
+        grid-column: span 3;
+    }
+    .landing-left div{
+        margin-top: 100px;
+        margin-left:20px;
+        margin-right: 20px;
+    }
+    .landing-left h1{
+        font-size: 2.8rem
     }
 }

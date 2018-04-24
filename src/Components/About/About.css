@@ -1,5 +1,95 @@
 .about-wrapper {
+    position: relative;
     background-color: #fff;
-    min-height: 100vh;
+    min-height: 900px;
     padding-top: 100px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.image-telescope{
+    position: relative;
+    display: block;
+    max-width: 1300px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 400px;
+    background-image: url('/assets/my-image1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px auto;
+    background-attachment:fixed;
+    border-radius: 50%;
+    overflow: visible;
+    
+}
+.image-telescope p{
+    display: inline-block;
+    margin-top:120px;
+    line-height: 1.5rem;
+    background-color: rgba(0,0,0,.7);
+    padding: 20px;
+    color:#fff;
+}
+.about-me{
+    position: relative;
+
+}
+.about-me h1{
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    letter-spacing: 4px;
+    color:#141414;
+    
+}
+.skills-wrapper{
+    position: relative;
+    padding-top:50px;
+    margin-top:50px;
+    background-color: #eee;
+}
+.skill-logo-wrapper{
+    display: grid;
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    padding: 40px;
+}
+.skill-logo-wrapper>div{
+    grid-column: 1 span 2;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 3px;
+}
+.skill-desc{
+    padding: 20px;
+    font-weight: bold;
+}
+.skill-desc hr{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .image-telescope{
+        width: 450px;
+        height: 450px;
+    }
+    .skill-logo-wrapper>div{
+        grid-column: 1 / 5;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        border-radius: 3px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 468px){
+    .image-telescope{
+        width: 350px;
+        height: 350px;
+    }
 }

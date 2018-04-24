@@ -5,7 +5,11 @@ class Contact extends Component {
     render(){
         return(
             <section className="contact-wrapper" name="contact">
-                <h1>Contact</h1>
+                <div>
+                    <span>I am available for work, get in touch</span>
+                    <br/>
+                    <span>jefferson.s.jiao@gmail.com</span>
+                </div>
             </section>
         )
     }
